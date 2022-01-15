@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Set;
 
 public interface BucketService {
-
+    // List<Integer> чтобы печатать в контроллере добавленные покупки
     List<Integer> addItem(List<Integer> item);
 
     String getItems();

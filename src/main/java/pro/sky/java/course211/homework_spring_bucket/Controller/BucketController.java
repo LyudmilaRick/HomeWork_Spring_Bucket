@@ -33,7 +33,7 @@ public class BucketController {
     public String getBucket() {
         return bucketService.getItems();
     }
-
+   // просто красивая печать
     private String getResult(String color, List<Integer> item, String action) {
         return String.format("<B  style=\"color:%s\"> %s %s  %s  </b>", color, "Товар ", item.toString(), action);
     }

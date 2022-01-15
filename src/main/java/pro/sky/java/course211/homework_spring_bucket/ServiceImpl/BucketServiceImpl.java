@@ -16,7 +16,7 @@ public class BucketServiceImpl implements BucketService {
         bucket = new Bucket();
         System.out.println("Есть такая корзина");
     }
-
+   // замена на List<Integer>
     @Override
     public List<Integer> addItem(List<Integer> item) {
         return bucket.add(item);
