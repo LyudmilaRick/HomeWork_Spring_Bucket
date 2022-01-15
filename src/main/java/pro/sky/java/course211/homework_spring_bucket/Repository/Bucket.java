@@ -3,25 +3,23 @@ package pro.sky.java.course211.homework_spring_bucket.Repository;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Set;
+import java.util.List;
 
 @Repository
+
 public class Bucket {
-    private final HashMap<Integer, Integer> itemsStore = new HashMap<>();
+    private final ArrayList<Integer> itemsStore;
 
-    public void add(ArrayList<Integer> idLists) {
-        for (Integer id : idLists) {
-            if (itemsStore.containsKey(id)) {
-                itemsStore.put(id, itemsStore.get(id) + 1);
-            } else {
-                itemsStore.put(id, 1);
-            }
-        }
+    public Bucket() {
+        itemsStore = new ArrayList<>();
     }
 
-    public Set<Integer> getItem() {
-        return itemsStore.keySet();
+    public List<Integer> add(List<Integer> item) {
+        itemsStore.addAll(item);
+        return item;
     }
 
+    public String getItem() {
+        return itemsStore.toString();
+    }
 }
