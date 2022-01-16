@@ -7,7 +7,6 @@ import java.util.List;
 
 @Repository
 public class Bucket {
-    // замена - HashMap на ArrayList, чтобы не потерят все покупки
     private final ArrayList<Integer> itemsStore;
 
     public Bucket() {
