@@ -4,7 +4,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
-
+// 18.01.2022
 public class Bucket {
     private final List<Integer> itemsStore;
 

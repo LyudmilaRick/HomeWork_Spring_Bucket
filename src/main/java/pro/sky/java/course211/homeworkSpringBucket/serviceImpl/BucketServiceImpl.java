@@ -5,7 +5,7 @@ import pro.sky.java.course211.homeworkSpringBucket.repository.Bucket;
 import pro.sky.java.course211.homeworkSpringBucket.service.BucketService;
 
 import java.util.List;
-
+// 18.01.2022
 @Service
 public class BucketServiceImpl implements BucketService {
      public final Bucket bucket;
