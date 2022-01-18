@@ -1,13 +1,12 @@
-package pro.sky.java.course211.homework_spring_bucket.Repository;
+package pro.sky.java.course211.homeworkSpringBucket.repository;
 
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
 import java.util.List;
 
-@Repository
 public class Bucket {
-    private final ArrayList<Integer> itemsStore;
+    private final List<Integer> itemsStore;
 
     public Bucket() {
         itemsStore = new ArrayList<>();
@@ -18,7 +17,7 @@ public class Bucket {
         return item;
     }
 
-    public String getItem() {
-        return itemsStore.toString();
+    public List<Integer> getItems(){
+        return itemsStore;
     }
 }
